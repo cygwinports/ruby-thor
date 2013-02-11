@@ -1,0 +1,8 @@
+inherit rubygem
+
+NAME="ruby-thor"
+VERSION=0.17.0
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby thor extension"
+DESCRIPTION="A scripting framework that replaces rake, sake and rubigen."
