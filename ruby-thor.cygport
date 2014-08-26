@@ -1,8 +1,14 @@
 inherit rubygem
 
 NAME="ruby-thor"
-VERSION=0.18.1
+VERSION=0.19.1
 RELEASE=1
 CATEGORY="Ruby"
-SUMMARY="Ruby thor extension"
-DESCRIPTION="A scripting framework that replaces rake, sake and rubigen."
+SUMMARY="Ruby CLI toolkit"
+DESCRIPTION="Thor is a toolkit for building powerful command-line interfaces."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_thor_CONTENTS="usr/bin/ ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_thor_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
